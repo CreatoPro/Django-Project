@@ -1,4 +1,61 @@
+<!-- {% load static %}
 
-
+<link href="{% static '/css/main.css' %}" rel = "stylesheet"
+type="text/css">
 
 <h3>hello world</h3>
+
+<img src="{% static 'images/2.JPG' %}"> -->
+{% load static %}
+<!doctype html>
+<html>
+<head>
+    <title>Shreesat Sahu</title>
+    <link href="{% static '/css/main.css' %}" rel = "stylesheet"type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+</head>
+<body>
+    <div class="container"> 
+        <br>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card card-body"></div>
+                    <img src="{% static 'images/2.JPG' %}">
+                    <hr>
+                    <h4>Hi I am Shreesat Sahu</h4>
+                    <p>I am a web developer</p>
+            </div>
+
+            <div class="col-md-9">
+                <div class="card card-body"></div>
+            </div>
+        </div>
+
+        <br>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card card-body"></div>
+                </div>
+    
+                <div class="col-md-6">
+                    <div class="card card-body"></div>
+                </div>
+            </div>
+
+        <br>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card card-body"></div>
+                </div>
+    
+                <div class="col-md-6">
+                    <div class="card card-body"></div>
+                </div>
+            </div>
+    </div>
+
+
+</body>
+</html>
