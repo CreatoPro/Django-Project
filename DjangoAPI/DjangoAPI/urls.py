@@ -1,4 +1,4 @@
-"""mdb_dashborad URL Configuration
+"""DjangoAPI URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.2/topics/http/urls/
@@ -14,11 +14,10 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include
-
-import jsondata
+from django.urls import path
+from django.conf.urls import url,include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('jsondata.urls')),
+    url(r'^', include('EmployeeApp.urls'))
 ]
